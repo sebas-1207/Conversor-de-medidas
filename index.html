@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>JavaScript Modules</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="text-center mb-4">Conversor de Unidades</h1>
+                <div class="form-group text-center">
+                    <label for="cantidad">Cantidad</label>
+                    <input type="range" class="form-control" id="cantidad" min="0" max="1000" value="0"
+                        onchange="convertir()">
+                    <span id="valor" class="font-weight-bold mt-2">0</span>
+                </div>
+                <div class="form-group">
+                    <label for="de">Convertir De:</label>
+                    <select class="form-control" id="de">
+                        <option value="1">Kg</option>
+                        <option value="2">mts</option>
+                        <option value="3">ºC</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="a">Convertir A:</label>
+                    <select class="form-control" id="a">
+                        <option value="1">Lbs</option>
+                        <option value="2">Pies</option>
+                        <option value="3">ºF</option>
+                    </select>
+                </div>
+                <h1 id="resultado" class="mt-3">Resultado: 0.00</h1>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
